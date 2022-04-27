@@ -1,0 +1,53 @@
+:root{
+    --primary-blue: hsl(223, 87%, 63%);
+    --secondary-blue: hsl(223, 100%, 88%);
+    --secondary-red: hsl(354, 100%, 66%);
+    --neutral-gray: hsl(0, 0%, 59%);
+    --neutral-blue: hsl(209, 33%, 12%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 2.0rem;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-gray{
+    color: var(--neutral-gray);
+}
+.container{
+    width: 30rem;
+    height: 80rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo-img{
+    margin-bottom: 4rem;
+}
+.text-launching{
+    margin-bottom: 2.5rem;
+}
+.container span:nth-child(1){
+    color: black;
+    font-weight: bold;
+}
+.text-subscribe{
+    margin-bottom: 3rem;
+}
+.input-submit{
+    width: 100%;
+}
+
