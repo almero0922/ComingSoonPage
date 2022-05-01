@@ -29,7 +29,22 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
-    <script src="https://kit.fontawesome.com/f6a3ea15f1.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/f6a3ea15f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function myFunction(){
+      var email = document.getElementById("mail");
+      email.addEventListener("keyup", function (event) {
+        if (email.validity.typeMismatch) {
+          email.setCustomValidity("I expect an e-mail, darling!");
+        } else {
+          email.setCustomValidity("");
+        }
+      });
+    }
+    </script>
   </head>
   <body>
     <main class="container">
@@ -39,10 +54,21 @@
       </p>
       <p class="text-gray text-subscribe">Subscribe and get notified</p>
       <form class="input-form" action="">
-        <input class="input-submit" value="Your email address..." type="text" />
-        <button class="button-submit">Notify Me</button>
+        <input
+          class="input-submit"
+          placeholder="Your email address..."
+          type="email"
+          id="mail"
+        />
+        <button type="submit" class="button-submit" value="submit">
+          Notify Me
+        </button>
       </form>
-      <img class="dashboard-image"src="./images/illustration-dashboard.png" alt="Dashboard" />
+      <img
+        class="dashboard-image"
+        src="./images/illustration-dashboard.png"
+        alt="Dashboard"
+      />
       <div class="icon-container">
         <i class="fa-brands fa-facebook-f fa-xs"></i>
         <i class="fa-brands fa-twitter fa-xs"></i>
