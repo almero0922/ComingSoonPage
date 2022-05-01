@@ -96,3 +96,22 @@ i{
     color: var(--neutral-gray);
     font-size: 1rem;
 }
+@media (min-width: 800px){
+    .container{
+        width: 50rem;
+    }
+    .input-form{
+        flex-direction: row;
+    }
+    .input-submit{
+        width: 64%;
+        margin-right: 4%;
+    }
+    .button-submit{
+        width: 32%;
+    }
+    .button-submit:hover{
+        background-color: hsl(223, 87%, 70%);
+        cursor: pointer;
+    }
+}
